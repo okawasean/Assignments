@@ -287,8 +287,7 @@ Another way to check on the progress of your runs and the server status is with 
 
 Now, we will need to create an index of the human genome that bowtie2 will use to map our sequences in the genome. In order to do this, you will need to use the previously downloaded files of the human genome with the desired build (e.g. hg19,hg38), you can find those files within the server here: */usr/local/share/human/*
 
-**BEFORE RUNNING ANYTHING**: go to the "Other resources" section at the end of the assignment!
-
+Indexes take a lot of computational resources and time to run. The one we need for the human genome would take around 3 hours to be done.  For this question, you can just enter the command here. You can run the command to see that Bowtie2 starts to build an index, and kill it with `ctrl+c` once you have confirmed it is working. 
 
 ```{bash, eval=FALSE}
 
@@ -364,11 +363,7 @@ Before signing up, we need to make sure that we won't leave behind any big files
 
 ## Other Resources
 
-### a. Bowtie2 index
-
-Indexes take a lot of computational resources and time to run. The one we need for the human genome will take around 3 hours to be done. ***DO NOT RUN THE INDEX COMMAND***. Go on to the next step, using the previously run index: *hg38_bowtie2_index* under the following path: */usr/local/share/indexes/*
-
-### b. Rubric
+### a. Rubric
 
 You can get up to 20 points, if you answer all the questions correctly. Make sure to consult the resources given through the assignment, they are meant to make the assignment easier. 
 
