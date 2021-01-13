@@ -353,6 +353,8 @@ Before signing up, we need to make sure that we won't leave behind any big files
 
 ### b. Uploading to Github
 
+Follow tutorial from: *https://happygitwithr.com/index.html*
+
   1. Make sure to create a Github account of your own. 
 
   2. Once you have set it up, create a new public repository for the course. 
