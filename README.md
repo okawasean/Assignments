@@ -1,3 +1,5 @@
 # Assignments
 Genome Informatics Assignments
-This is the assignments folder
+
+
+## Assignment 1
