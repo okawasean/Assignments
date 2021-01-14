@@ -17,17 +17,26 @@ knitr::opts_chunk$set(echo = TRUE)
 For this assignment we will be using data from a Chromatin Immunoprecipitation sequencing (ChIP-seq) produced by Choi, Won-Young, et al., (2020). *https://pubmed.ncbi.nlm.nih.gov/33293480/*. This data is part of a series of experiments that aimed to understand the chromatin changes that happen when an induced Pluripotent Stem Cell (iPSC) undergo differentiation towards a Neuronal Progenitor Cell (NPC). The **fastq** files from this experiment have been pre-downloaded and added to the server, under the following path: **/usr/local/share/data/assignment_1/**. The datasets that we will be using for the assignment are in a shared *reading only* location that you can read but ARE NOT allowed to alter.
 
 This assignment has 3 main goals: 
-
+  
   1. Get familiar with the server
   
   2. Manage a conda environment
   
   3. Perform an alignment against the human genome
-  
-  4. Cleaning your folder and uploading your assignment to Github
 
 
-## 1. Getting Familiar with the Server
+## 0. Starting Github
+
+Before we can jump in to the lecture, we need to make sure you have a Github repository you can use to upload the assignment. If you still haven't set up a Github account, now is the time to do so! Further instructions on how to install Github to your local computer and connect it to RStudio can be found here:**https://happygitwithr.com/index.html**
+
+a. Create a private repository on Github - 1pt 
+
+b. Add **BMEGGenoInfo** as collaborator - 1pt
+
+b. Clone the repository on your local computer - 1pt
+
+
+## 2. Getting Familiar with the Server
 
 For our course we will be using a server based on a Centos system. This will be the place where you will do the assignments and project. There are a couple of things that you need to be aware of while working on the server. The server has limited storage and computer power. Therefore, you will be required to be mindful of the processes you run as well as the files you keep. 
 
@@ -130,7 +139,7 @@ Because this is a very large dataset we will proceed to subset it in order to ma
 
 ```{bash, eval=FALSE}
 
-## How many lines does the file was in total? - 0.25
+## How many lines does the file was in total? - 0.5
 #Tip: look at the *wc* command documentation (man wc)
 
 
@@ -182,7 +191,7 @@ There will be times where you will want to save a copy of a dataset or file befo
 
 ```
 
-## 2. Managing Conda Environments
+## 3. Managing Conda Environments
 
 ### a. Create a conda environment
 
@@ -221,7 +230,7 @@ conda install -n your_environment_name  samtools==1.11
 ```
 
 
-## 3. Performing Alignments 
+## 4. Performing Alignments 
 
 ### a. Data quality check
 
@@ -332,17 +341,15 @@ Now, we will make use of **samtools** to review some basic features of the align
 ## Tip: check out the different flag (-f and -F) options
 ## Tip: Read the samtools view --help, read carefully for an option that allows you to *count* the results of your search
 
-## Count the number of mapped reads - 1 pt
+## Total number of mapped reads - 1 pt
 
-## Count the number of unmapped reads - 1 pt
+## Total number of unmapped reads - 1 pt
 
 
 ```
 
 
-## 4. Cleaning and Uploading
-
-### a. Cleaning your folders
+## 5. Cleaning and Github Push
 
 Before signing up, we need to make sure that we won't leave behind any big files that can take up a lot of memory from our server. To do this, make sure to:
 
@@ -351,26 +358,29 @@ Before signing up, we need to make sure that we won't leave behind any big files
   b. Zip or delete all the files used for the assignment 
 
 
-### b. Uploading to Github
+Now that everything has been said and done, it's time to 'push' your final version of the assignment onto your github repository. Make sure to follow this basic steps: 
 
-Follow tutorial from: *https://happygitwithr.com/index.html*
+  a. Pull the repository onto your computer: this will ensure that you have the most up to date version (it is highly useful when working on collaborative projects!)
 
-  1. Make sure to create a Github account of your own. 
+  b. Commit the changes to the repository: all the changes on the assignment file that you have done up to this point will be saved in a version that you will be able to track
 
-  2. Once you have set it up, create a new public repository for the course. 
-
-  3. Use the "upload file" option to upload your assignment Rmd to the website. 
-
-  4. Upload the link of your github repository where the assignment file is located onto Canvas
+  c. 'Push' the changes to the repository: this will upload everything to your github repository.
+  
+  d. Share the repository link on Canvas
+  
 
 ## Other Resources
 
-### a. Rubric
+### a. Bowtie2 index
 
-You can get up to 20 points, if you answer all the questions correctly. Make sure to consult the resources given through the assignment, they are meant to make the assignment easier. 
+Indexes take a lot of computational resources and time to run. The one we need for the human genome will take around 3 hours to be done. ***DO NOT RUN THE INDEX COMMAND***. Go on to the next step, using the previously run index: *hg38_bowtie2_index* under the following path: */usr/local/share/indexes/*
 
-  - Getting Familiar - 7 pt
-  - Managing Conda Environments - 3
+### b. Rubric
+
+You can get up to 22.5 points, if you answer all the questions correctly. Make sure to consult the resources given through the assignment, they are meant to make the assignment easier. 
+  - Github Setup - 2 pt
+  - Getting Familiar - 7.5 pt
+  - Managing Conda Environments - 3 pt
   - Performing Alignments - 10 pt
    
    
