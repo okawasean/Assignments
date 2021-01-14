@@ -225,6 +225,8 @@ Now that the environment has been created, its time to add the packages that we 
 ## Add fastQC and bowtie2 to your conda environment: - 1.5 pt
 
 ## Run the following command to install samtools onto your conda environment:
+conda config --add channels bioconda 
+conda config --add channels conda-forge 
 conda install -n your_environment_name  samtools==1.11
 
 ```
