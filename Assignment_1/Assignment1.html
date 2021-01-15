@@ -1645,13 +1645,25 @@ div.tocify {
 <h2>0. Starting Github</h2>
 <p>Before we can jump in to the lecture, we need to make sure you have a Github repository you can use to upload the assignment. If you still haven’t set up a Github account, now is the time to do so! Further instructions on how to install Github to your local computer and connect it to RStudio can be found here:<strong><a href="https://happygitwithr.com/index.html" class="uri">https://happygitwithr.com/index.html</a></strong></p>
 <ol style="list-style-type: lower-alpha">
-<li><p>Create a private repository on Github</p></li>
-<li><p>Clone the repository on your local computer</p></li>
+<li><p>Create a private repository on Github - 1pt</p></li>
+<li><p>Add <strong>BMEGGenoInfo</strong> as collaborator - 1pt</p></li>
+</ol>
+<pre><code>- Go to the GitHub website of the repository you created on point a
+
+- Go to the *Settings* tab
+
+- Select the *Manage access* option on the menu displayed on the left
+
+- Click on *Invite a collaborator* 
+
+- Search for *BMEGGenoInfo* and add as collaborator</code></pre>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Clone the repository on your local computer - 1pt</li>
 </ol>
 </div>
 <div id="getting-familiar-with-the-server" class="section level2">
 <h2>2. Getting Familiar with the Server</h2>
-<p>For our course we will be using a server based on a Centos system. This will be the place where you will do the assignments and project. There are a couple of things that you need to be aware of while working on the server. The server has limited storage and computer power. Therefore, you will be required to be mindful of the processes you run as well as the files you keep.</p>
+<p>For our course we will be using a server based on a Centos system. This will be the place where you will do the assignments and project. The server has limited storage and computer power. Therefore, you will be required to be mindful of the processes you run as well as the files you keep.</p>
 <p>To join the server you will need to be on an active connection of a UBC Virtual Private Network (VPN). If you do not have one already, you can check how to install it here: <em><a href="https://it.ubc.ca/services/email-voice-internet/myvpn/setup-documents" class="uri">https://it.ubc.ca/services/email-voice-internet/myvpn/setup-documents</a></em>. Once the VPN has been set, you will need to open a terminal.</p>
 <ul>
 <li><strong>Windows system:</strong>
@@ -1721,7 +1733,7 @@ div.tocify {
 <h3>e. Piping</h3>
 <p>Because this is a very large dataset we will proceed to subset it in order to make it more manageable for the assignment. Using the commands that you learned above:</p>
 <pre class="bash"><code>
-## How many lines does the file was in total? - 0.25
+## How many lines does the file was in total? - 0.5
 #Tip: look at the *wc* command documentation (man wc)
 
 
@@ -1786,6 +1798,8 @@ div.tocify {
 ## Add fastQC and bowtie2 to your conda environment: - 1.5 pt
 
 ## Run the following command to install samtools onto your conda environment:
+conda config --add channels bioconda 
+conda config --add channels conda-forge 
 conda install -n your_environment_name  samtools==1.11
 </code></pre>
 </div>
@@ -1866,13 +1880,22 @@ bowtie2 -h
 <h3>f. Viewing the alignments</h3>
 <p>Now, we will make use of <strong>samtools</strong> to review some basic features of the alignment. For more information about this tool: <em><a href="http://www.htslib.org/doc/" class="uri">http://www.htslib.org/doc/</a></em></p>
 <pre class="bash"><code>
-## Use *samtools view* to get the:
+#### Using *samtools view* get: 
+
+## The total number of mapped reads - 0.5 pt
+# - 
+## Type the command that you used to get it below - 0.5 pt
+
+
+
+## The total number of unmapped reads - 0.5 pt
+#- 
+## Type the command that you used to get it below - 0.5 pt
+
+
+
 ## Tip: check out the different flag (-f and -F) options
 ## Tip: Read the samtools view --help, read carefully for an option that allows you to *count* the results of your search
-
-## Count the number of mapped reads - 1 pt
-
-## Count the number of unmapped reads - 1 pt
 </code></pre>
 </div>
 </div>
@@ -1899,11 +1922,12 @@ bowtie2 -h
 </div>
 <div id="b.-rubric" class="section level3">
 <h3>b. Rubric</h3>
-<p>You can get up to 20 points, if you answer all the questions correctly. Make sure to consult the resources given through the assignment, they are meant to make the assignment easier.</p>
+<p>You can get up to 22.5 points, if you answer all the questions correctly. Make sure to consult the resources given through the assignment, they are meant to make the assignment easier.</p>
 <ul>
-<li>Getting Familiar - 7 pt</li>
-<li>Managing Conda Environments - 3</li>
-<li>Performing Alignments - 10 pt</li>
+<li><p>Github Setup - 2 pt</p></li>
+<li><p>Getting Familiar - 7.5 pt</p></li>
+<li><p>Managing Conda Environments - 3 pt</p></li>
+<li><p>Performing Alignments - 10 pt</p></li>
 </ul>
 </div>
 </div>

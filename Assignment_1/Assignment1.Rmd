@@ -29,16 +29,27 @@ This assignment has 3 main goals:
 
 Before we can jump in to the lecture, we need to make sure you have a Github repository you can use to upload the assignment. If you still haven't set up a Github account, now is the time to do so! Further instructions on how to install Github to your local computer and connect it to RStudio can be found here:**https://happygitwithr.com/index.html**
 
-a. Create a private repository on Github - 1pt 
+  a. Create a private repository on Github - 1pt 
 
-b. Add **BMEGGenoInfo** as collaborator - 1pt
+  b. Add **BMEGGenoInfo** as collaborator - 1pt
 
-b. Clone the repository on your local computer - 1pt
+    - Go to the GitHub website of the repository you created on point a
+
+    - Go to the *Settings* tab
+
+    - Select the *Manage access* option on the menu displayed on the left
+
+    - Click on *Invite a collaborator* 
+
+    - Search for *BMEGGenoInfo* and add as collaborator
+   
+
+  c. Clone the repository on your local computer - 1pt
 
 
 ## 2. Getting Familiar with the Server
 
-For our course we will be using a server based on a Centos system. This will be the place where you will do the assignments and project. There are a couple of things that you need to be aware of while working on the server. The server has limited storage and computer power. Therefore, you will be required to be mindful of the processes you run as well as the files you keep. 
+For our course we will be using a server based on a Centos system. This will be the place where you will do the assignments and project. The server has limited storage and computer power. Therefore, you will be required to be mindful of the processes you run as well as the files you keep. 
 
 To join the server you will need to be on an active connection of a UBC Virtual Private Network (VPN). If you do not have one already, you can check how to install it here: *https://it.ubc.ca/services/email-voice-internet/myvpn/setup-documents*. Once the VPN has been set, you will need to open a terminal. 
 
@@ -52,7 +63,6 @@ To join the server you will need to be on an active connection of a UBC Virtual 
       c. When prompted, type your password to complete the login 
       
     
-
 Now that you have successfully joined the server, let's get you used to some basic commands
 
 ### a. Creating a directory 
@@ -339,13 +349,22 @@ Now, we will make use of **samtools** to review some basic features of the align
 
 ```{bash, eval=FALSE}
 
-## Use *samtools view* to get the:
+#### Using *samtools view* get: 
+
+## The total number of mapped reads - 0.5 pt
+# - 
+## Type the command that you used to get it below - 0.5 pt
+
+
+
+## The total number of unmapped reads - 0.5 pt
+#- 
+## Type the command that you used to get it below - 0.5 pt
+
+
+
 ## Tip: check out the different flag (-f and -F) options
 ## Tip: Read the samtools view --help, read carefully for an option that allows you to *count* the results of your search
-
-## Total number of mapped reads - 1 pt
-
-## Total number of unmapped reads - 1 pt
 
 
 ```
@@ -359,8 +378,7 @@ Before signing up, we need to make sure that we won't leave behind any big files
 
   b. Zip or delete all the files used for the assignment 
 
-
-Now that everything has been said and done, it's time to 'push' your final version of the assignment onto your github repository. Make sure to follow this basic steps: 
+  Now that everything has been said and done, it's time to 'push' your final version of the assignment onto your github repository. Make sure to follow this basic steps: 
 
   a. Pull the repository onto your computer: this will ensure that you have the most up to date version (it is highly useful when working on collaborative projects!)
 
@@ -380,9 +398,13 @@ Indexes take a lot of computational resources and time to run. The one we need f
 ### b. Rubric
 
 You can get up to 22.5 points, if you answer all the questions correctly. Make sure to consult the resources given through the assignment, they are meant to make the assignment easier. 
+
   - Github Setup - 2 pt
+
   - Getting Familiar - 7.5 pt
+
   - Managing Conda Environments - 3 pt
+
   - Performing Alignments - 10 pt
    
    
