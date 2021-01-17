@@ -55,11 +55,11 @@ To join the server you will need to be on an active connection of a UBC Virtual 
 
   - **Windows system:** 
       a. Install a terminal emulator like Putty (*https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html*). 
-      b. This will allow you to do a SSH connection using the server's IP (137.82.55.186) and your credentials. 
+      b. This will allow you to do a SSH connection using the server's address and your credentials. 
   
   - **Linux/Unix system (Apple computer and Ubuntu):** 
       a. Open a terminal
-      b. Type the following command: ssh username@137.82.55.186 
+      b. Type the following command: ssh username@gi-edu-sv#.bme.ubc.ca (replace the # with your assigned server: 1,2,3 or 4)
       c. When prompted, type your password to complete the login 
       
     
