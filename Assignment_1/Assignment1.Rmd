@@ -30,6 +30,7 @@ This assignment has 3 main goals:
 Before we can jump in to the lecture, we need to make sure you have a Github repository you can use to upload the assignment. If you still haven't set up a Github account, now is the time to do so! Further instructions on how to install Github to your local computer and connect it to RStudio can be found here:**https://happygitwithr.com/index.html**
 
   a. Create a private repository on Github - 1pt 
+  Done
 
   b. Add **BMEGGenoInfo** as collaborator - 1pt
 
@@ -43,9 +44,9 @@ Before we can jump in to the lecture, we need to make sure you have a Github rep
 
     - Search for *BMEGGenoInfo* and add as collaborator
    
-
+  Done
   c. Clone the repository on your local computer - 1pt
-
+  Done
 
 ## 2. Getting Familiar with the Server
 
@@ -61,7 +62,7 @@ To join the server you will need to be on an active connection of a UBC Virtual 
       a. Open a terminal
       b. Type the following command: ssh username@gi-edu-sv#.bme.ubc.ca (replace the # with your assigned server: 1,2,3 or 4)
       c. When prompted, type your password to complete the login 
-      
+      Done (ssh seanokawa@gi-edu-sv4.bme.ubc.ca)      
     
 Now that you have successfully joined the server, let's get you used to some basic commands
 
@@ -71,7 +72,8 @@ Now that you have successfully joined the server, let's get you used to some bas
 
 ## Create a new directory (folder) for this assignment - 1pt 
 ## Tip: look at the help of the *mkdir* command (man mkdir)
-
+## Answer
+mkdir assign1_so
 
 ```
 
